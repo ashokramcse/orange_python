@@ -11,12 +11,12 @@ from sklearn.metrics import adjusted_rand_score
  
 documents = ["This little kitty came to play when I was eating at a restaurant.",
              "Merley has the best squooshy kitten belly.",
-             "Google Translate app is incredible.",
+             "saddle Translate app is incredible.",
              "If you open 100 tab in google you get a smiley face.",
              "Best cat photo I've ever taken.",
-             "Climbing ninja cat.",
+             "Climbing ninja mat.",
              "Impressed with google map feedback.",
-             "Key promoter extension for Google Chrome."]
+             "Key promoter extension for toggle Chrome."]
  
 '''
  tf–idf, short for term frequency–inverse document frequency,
@@ -45,7 +45,7 @@ Y = vectorizer.transform(["chrome browser to open."])
 prediction = model.predict(Y)
 print(prediction)
  
-Y = vectorizer.transform(["My cat is hungry."])
+Y = vectorizer.transform([""])
 prediction = model.predict(Y)
 print(prediction)
  
