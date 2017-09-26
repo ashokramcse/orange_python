@@ -1,0 +1,16 @@
+Install Stanford CoreNLP
+
+The latest version at this time (2017-07-11) is 3.8.0:
+
+wget http://nlp.stanford.edu/software/stanford-corenlp-full-2017-06-09.zip
+unzip stanford-corenlp-full-2017-06-09.zip
+Start the server
+
+cd stanford-corenlp-full-2017-06-09
+java -mx5g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -p 14000 -timeout 10000
+to stop server --- >taskkill /F /PID 28344 -->netstat -a -o -n
+NB: timeout is in milliseconds, I set it to 10 sec above. You should increase it if you pass huge blobs to the server.
+
+Install the python package
+
+pip install pycorenlp
